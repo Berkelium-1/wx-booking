@@ -1,0 +1,9 @@
+<view class="chart">
+    <view class="pie">
+        <!-- 真机模拟看不到 加上属性 force-use-old-canvas="true" -->
+        <e-chart id="mychart-dom-bar" canvas-id="mychart-bar" option="{{pieOption}}"></e-chart>
+    </view>
+    <view class="bar">
+        <e-chart id="mychart-dom-bar" canvas-id="mychart-bar" option="{{barOption}}"></e-chart>
+    </view>
+</view>

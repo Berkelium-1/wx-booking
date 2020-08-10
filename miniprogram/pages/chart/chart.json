@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "e-chart": "../../components/e-chart/e-chart"
+  },
+  "navigationBarTitleText": ""
+
+}

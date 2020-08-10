@@ -1,0 +1,71 @@
+.booking-item {
+    display: flex;
+    align-items: center;
+    height: 120rpx;
+    border: 1rpx solid #ccc;
+    font-size: 24rpx;
+
+    .icon {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .img-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            image {
+                width: 60%;
+            }
+        }
+    }
+
+    .infos {
+        flex: 4;
+
+        .infos-top {
+            color: #636363;
+            margin-bottom: 20rpx;
+
+            .infos-date {
+                margin-right: 10rpx;
+            }
+        }
+
+
+        .infos-note {
+            width: 300rpx;
+            font-size: 20rpx;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .trend {
+        flex: 1;
+
+        .trend-title {
+            margin-bottom: 20rpx;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 26rpx;
+        }
+    }
+
+
+    .pay-text {
+        color: #ff0808;
+    }
+
+    .income-text {
+        color: #08ff08;
+    }
+}

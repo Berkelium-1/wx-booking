@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "BookingItem": "../../components/BookingItem/BookingItem"
+  },
+  "navigationBarTitleText": ""
+}

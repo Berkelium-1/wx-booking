@@ -1,0 +1,21 @@
+<view class="booking-item">
+    <view class="icon">
+        <view class="img-box">
+            <image src="{{data.icon.url}}" mode="widthFix" lazy-load />
+        </view>
+        <text>{{data.icon.title}}</text>
+    </view>
+    <view class="infos">
+        <view class="infos-top">
+            <text class="infos-date">{{data.infos.date}}</text>
+            <text class="account">{{data.account}}</text>
+        </view>
+        <view class="infos-note">{{data.infos.note?data.infos.note:'无备注'}}</view>
+    </view>
+    <view class="trend">
+        <view class="trend-title">{{data.trend.title}}</view>
+        <view class="price {{data.trend.isPay===0?'income-text':'pay-text'}}">
+            {{data.infos.price}}
+        </view>
+    </view>
+</view>

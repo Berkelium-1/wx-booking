@@ -1,0 +1,162 @@
+.booking {
+  width: 100vw;
+  height: 100vh;
+}
+.booking .booking-tabs {
+  width: 100vw;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2rpx 4rpx 5rpx #e4e4e4;
+}
+.booking .booking-tabs .title {
+  margin-top: 70rpx;
+  width: 260rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  border-radius: 30rpx;
+  overflow: hidden;
+  border: 4rpx solid #0984E3;
+}
+.booking .booking-tabs .title .item {
+  flex: 1;
+  text-align: center;
+  color: #0984E3;
+  background-color: #F6F6F6;
+}
+.booking .booking-tabs .title .item.active {
+  color: #ffffff;
+  background-color: #0984E3;
+}
+.booking .content {
+  padding-top: 70rpx;
+}
+.booking .content .icons-wraper {
+  margin: 0 auto;
+  width: 90%;
+  height: 300rpx;
+  color: #444444;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.booking .content .icons-wraper .icon-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin-bottom: 20rpx;
+  transition: 0.3s;
+}
+.booking .content .icons-wraper .icon-item.active {
+  transform: scale(1.1);
+}
+.booking .content .icons-wraper .icon-item.active .icon-img {
+  box-shadow: 0 0 10rpx 1rpx #0984E3;
+}
+.booking .content .icons-wraper .icon-item .icon-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10rpx 1rpx #b6b6b6;
+}
+.booking .content .icons-wraper .icon-item .icon-img image {
+  width: 60%;
+}
+.booking .content .icons-wraper .icon-item .icon-title {
+  padding: 10rpx 0;
+  font-size: 24rpx;
+}
+.booking .content .account-warper {
+  margin: 0 auto;
+  width: 90%;
+}
+.booking .content .account-warper .title {
+  margin-top: 30rpx;
+  padding: 30rpx 0;
+  color: #444444;
+  border-bottom: 1rpx solid #d1d1d1;
+}
+.booking .content .account-warper .account-group {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.booking .content .account-warper .account-group .account-item {
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  box-shadow: 0 0 10rpx 1rpx #eee;
+  transition: 0.2s;
+}
+.booking .content .account-warper .account-group .account-item.active {
+  background-color: #0984E3;
+  color: white;
+  box-shadow: 0 0 10rpx 1rpx #cacaca;
+}
+.booking .content .info-warper {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.booking .content .info-warper .info-item {
+  margin-bottom: 20rpx;
+  display: flex;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+}
+.booking .content .info-warper .info-item .title {
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #444444;
+}
+.booking .content .info-warper .info-item .input-box {
+  width: calc(100% - 100rpx);
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.booking .content .info-warper .info-item .input-box .date {
+  color: #808080;
+}
+.booking .content .info-warper .info-item .input-box .date,
+.booking .content .info-warper .info-item .input-box .price,
+.booking .content .info-warper .info-item .input-box .note {
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.booking .content .save-btn {
+  position: relative;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.booking .content .save-btn button {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  background-color: #0984E3;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking .content .save-btn .user-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}

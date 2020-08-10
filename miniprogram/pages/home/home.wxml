@@ -1,0 +1,44 @@
+<view class="home">
+    <view class="data-top">
+        <view class="balance">
+            本月结余
+            <text>{{balance}}</text>
+        </view>
+        <view class="total">
+            <view class="pay-total">
+                本月支出：
+                <text class="pay-text">{{payTotal}}</text>
+            </view>
+            <view class="income-total">
+                本月收入：
+                <text class="income-text">{{incomeTotal}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- content -->
+    <view class="data-content">
+        <view class="select-data">
+            <!-- <view class="title">{{date}}</view> -->
+            <view class="num">
+                <view>
+                    支出
+                    <text class="pay-text">{{todayData.pay}}</text>
+                </view>
+                <view>
+                    收入
+                    <text class="income-text">{{todayData.income}}</text>
+                </view>
+            </view>
+            <picker mode="date" value="{{date.current}}" start="{{date.start}}" end="{{date.end}}" bindchange="selectDate">
+                <view class="picker">
+                    <div class="date">日期：{{date.current}}</div>
+                    <view class="text">选择</view>
+                </view>
+            </picker>
+        </view>
+        <view class="booking-list" wx:if="{{toDayBookingData.length>0}}">
+            <BookingItem wx:for="{{toDayBookingData}}" wx:key="index" data="{{item}}"></BookingItem>
+        </view>
+        <view class="booking-null" wx:else>无记账数据</view>
+    </view>
+</view>

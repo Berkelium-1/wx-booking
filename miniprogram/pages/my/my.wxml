@@ -1,0 +1,29 @@
+<view class="my">
+    <!-- 用户信息 -->
+    <view class="my-header">
+        <!-- 已登录 -->
+        <view class="my-info" wx:if="{{userInfo}}">
+            <image class="img-bg" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+            <view class="info-box">
+                <image mode="widthFix" src="{{userInfo.avatarUrl}}" />
+                <view class="info-name">{{userInfo.nickName}}</view>
+            </view>
+        </view>
+        <!-- 未登录 -->
+        <view class="login-btn" wx:else>
+            <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+                登录
+            </button>
+        </view>
+    </view>
+    <!-- 功能列表 -->
+    <view class="my-list">
+        <view class="my-booking">
+            <navigator url="/pages/my_booking/my_booking" open-type="navigate">我的记账</navigator>
+        </view>
+        <view class="kefu">
+            <view>联系客服</view>
+            <button open-type="contact"></button>
+        </view>
+    </view>
+</view>

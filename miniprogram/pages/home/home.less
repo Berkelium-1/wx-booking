@@ -1,0 +1,104 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+
+    .data-top {
+        height: 30vh;
+        background-color: #0984E3;
+        color: white;
+
+        .balance {
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50rpx auto;
+            font-weight: 600;
+            font-size: 36rpx;
+            color: #ebebeb;
+
+            text {
+                padding: 10rpx;
+                color: white;
+                font-size: 46rpx;
+            }
+        }
+
+        .total {
+            margin: 0 auto;
+            padding-top: 40rpx;
+            width: 90%;
+            border-top: 1rpx solid #cecece;
+
+            .pay-total,
+            .income-total {
+                padding: 10rpx;
+
+                text {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    //
+    .data-content {
+        .select-data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 50rpx;
+            background-color: #f5f5f5;
+            font-size: 24rpx;
+            box-shadow: 0 0 5rpx 1rpx #e0e0e0;
+
+            >view {
+                padding: 0 30rpx;
+            }
+
+            .num {
+                display: flex;
+                justify-content: space-between;
+
+                >view {
+                    margin-left: 20rpx;
+
+                    >text {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .picker {
+                display: flex;
+
+                .date {
+                    padding: 0 16rpx;
+                    color: #747474;
+                }
+
+                .text {
+                    padding-right: 30rpx;
+                    color: #0984E3;
+
+                }
+
+            }
+        }
+
+        .booking-null {
+            padding: 100rpx 0;
+            text-align: center;
+            color: #c4c4c4;
+        }
+    }
+
+    .pay-text {
+        color: #ff0808;
+    }
+
+    .income-text {
+        color: #08ff08;
+    }
+}

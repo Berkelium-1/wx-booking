@@ -1,0 +1,88 @@
+.my {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.my .my-header {
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my .my-header .my-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.my .my-header .my-info .img-bg {
+  position: absolute;
+  width: 107%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(12rpx);
+}
+.my .my-header .my-info .info-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.my .my-header .my-info .info-box image {
+  width: 30%;
+  border: 4rpx solid #b1b1b1;
+  border-radius: 50%;
+}
+.my .my-header .my-info .info-box .info-name {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  font-weight: bolder;
+}
+.my .my-header .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.my .my-list {
+  margin-top: 30rpx;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my .my-list > view {
+  margin-top: 10rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #464646;
+  background-color: #ffffff;
+}
+.my .my-list > view > navigator {
+  padding-left: 60rpx;
+}
+.my .my-list > view:active {
+  background-color: #b1b1b1;
+}
+.my .my-list .kefu {
+  position: relative;
+}
+.my .my-list .kefu > view {
+  padding-left: 60rpx;
+}
+.my .my-list .kefu button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

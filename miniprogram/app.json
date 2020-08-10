@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/booking/booking",
+    "pages/chart/chart",
+    "pages/my/my",
+    "pages/my_booking/my_booking"
+  ],
+
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#0984e3",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home_active.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "记账",
+        "iconPath": "icon/booking.png",
+        "selectedIconPath": "icon/booking_active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "icon/chart.png",
+        "selectedIconPath": "icon/chart_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_active.png"
+      }
+    ]
+  },
+
+  "window": {
+    "backgroundColor": "#dddddd",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0984e3",
+    "navigationBarTitleText": "bk记账能手",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

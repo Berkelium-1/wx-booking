@@ -1,0 +1,5 @@
+<!-- pages/my_booking/my_booking.wxml -->
+<view class="booking-list" wx:if="{{bookingData.length>0}}">
+    <BookingItem wx:for="{{bookingData}}" wx:key="index" data="{{item}}" bindtap="delItem" data-key="{{item._id}}"></BookingItem>
+</view>
+<view class="booking-null" wx:else>你还没有记账~~</view>

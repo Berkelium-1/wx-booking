@@ -1,0 +1,59 @@
+<!-- pages/booking/booking.wxml -->
+<view class="booking">
+  <!-- 标签栏 -->
+  <view class="booking-tabs">
+    <view class="title">
+      <view class="item {{item.isActive?'active':''}}" wx:for="{{tabs}}" wx:key="index" data-active="{{item.isActive}}" bindtap="toggleTag">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="content">
+    <view class="icons-wraper">
+      <view class="icon-item {{item.isActive?'active':''}}" wx:for="{{icons}}" wx:key="index" data-index="{{index}}" bindtap="selectIcon">
+        <view class="icon-img">
+          <image src="{{item.url}}" mode="widthFix" lazy-load="{{true}}" />
+        </view>
+        <view class="icon-title">{{item.title}}</view>
+      </view>
+    </view>
+    <!-- 账户选择 -->
+    <view class="account-warper">
+      <view class="title">账户选择</view>
+      <view class="account-group">
+        <view class="account-item {{item.isActive?'active':''}}" wx:for="{{accounts}}" wx:key="idnex" data-index="{{index}}" bindtap="selectAccount">
+          {{item.title}}
+        </view>
+      </view>
+    </view>
+    <!-- 其他信息 -->
+    <view class="info-warper">
+      <view class="info-item">
+        <view class="title">日期：</view>
+        <view class="input-box">
+          <picker class="date" mode="date" fields="day" start="{{startDate}}" end="{{endDate}}" value="{{infos.date}}" bindchange="selectDate">
+            {{infos.date?infos.date:'选择日期'}}
+          </picker>
+        </view>
+      </view>
+      <view class="info-item">
+        <view class="title">金额：</view>
+        <view class="input-box">
+          <input class="price" type="digit" value="{{infos.price}}" placeholder="输入金额" bindinput="inputPrice" />
+        </view>
+      </view>
+      <view class="info-item">
+        <view class="title">备注：</view>
+        <view class="input-box">
+          <input class="note" type="text" value="{{infos.note}}" placeholder="输入备注" bindinput="inputNote" />
+        </view>
+      </view>
+    </view>
+    <!-- 保存按钮 -->
+    <view class="save-btn">
+      <button bindtap="save">保存</button>
+      <button class="user-btn" type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{!userInfo}}"></button>
+    </view>
+  </view>
+</view>

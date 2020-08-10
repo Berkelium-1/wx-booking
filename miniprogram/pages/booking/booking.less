@@ -1,0 +1,205 @@
+@fontColor: #444444;
+
+.booking {
+    width: 100vw;
+    height: 100vh;
+
+    //
+    .booking-tabs {
+        width: 100vw;
+        height: 100rpx;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 -2rpx 4rpx 5rpx #e4e4e4;
+
+        .title {
+            margin-top: 70rpx;
+            width: 260rpx;
+            height: 60rpx;
+            line-height: 60rpx;
+            display: flex;
+            border-radius: 30rpx;
+            overflow: hidden;
+            border: 4rpx solid #0984E3;
+
+
+            .item {
+                flex: 1;
+                text-align: center;
+                color: #0984E3;
+                background-color: #F6F6F6;
+
+                &.active {
+                    color: #ffffff;
+                    background-color: #0984E3;
+                }
+            }
+        }
+    }
+
+    //
+    .content {
+        padding-top: 70rpx;
+
+        // 图标
+        .icons-wraper {
+            margin: 0 auto;
+            width: 90%;
+            height: 300rpx;
+            color: @fontColor;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+
+            .icon-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                margin-bottom: 20rpx;
+                transition: .3s;
+
+                &.active {
+                    transform: scale(1.1);
+
+                    .icon-img {
+                        box-shadow: 0 0 10rpx 1rpx #0984E3;
+                    }
+                }
+
+                .icon-img {
+                    width: 100rpx;
+                    height: 100rpx;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 0 10rpx 1rpx #b6b6b6;
+
+                    image {
+                        width: 60%;
+                    }
+                }
+
+                .icon-title {
+                    padding: 10rpx 0;
+                    font-size: 24rpx;
+                }
+
+            }
+        }
+
+        //账户选择
+        .account-warper {
+
+            margin: 0 auto;
+            width: 90%;
+
+
+            .title {
+                margin-top: 30rpx;
+                padding: 30rpx 0;
+                color: @fontColor;
+                border-bottom: 1rpx solid #d1d1d1;
+            }
+
+            .account-group {
+                width: 100%;
+                height: 80rpx;
+                // background-color: #ebebeb;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .account-item {
+                    padding: 10rpx 20rpx;
+                    font-size: 24rpx;
+                    border-radius: 20rpx;
+                    background-color: white;
+                    box-shadow: 0 0 10rpx 1rpx #eee;
+                    transition: .2s;
+
+                    &.active {
+                        background-color: #0984E3;
+                        color: white;
+                        box-shadow: 0 0 10rpx 1rpx #cacaca;
+                    }
+                }
+            }
+        }
+
+        // 其他信息
+        .info-warper {
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 60rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .info-item {
+                margin-bottom: 20rpx;
+                display: flex;
+                width: 100%;
+                border-bottom: 1rpx solid #ccc;
+
+                .title {
+                    width: 100rpx;
+                    height: 60rpx;
+                    line-height: 60rpx;
+                    color: @fontColor;
+                }
+
+                .input-box {
+                    width: calc(100% - 100rpx);
+                    height: 60rpx;
+                    line-height: 60rpx;
+
+                    .date {
+                        color: #808080;
+                    }
+
+                    .date,
+                    .price,
+                    .note {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 24rpx;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                }
+            }
+        }
+
+        //
+        .save-btn {
+            position: relative;
+            width: 90%;
+            margin: 50rpx auto;
+
+
+            button {
+                width: 100%;
+                height: 100rpx;
+                text-align: center;
+                background-color: #0984E3;
+                color: #f1f1f1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .user-btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+    }
+}
